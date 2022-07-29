@@ -9,3 +9,11 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "beldier_TestSonarcloud"
+        property "sonar.organization", "beldier"
+    }
+}

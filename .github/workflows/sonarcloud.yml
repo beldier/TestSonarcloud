@@ -36,4 +36,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew build sonarqube --info --settings-file=./sonar-project.properties
+        run: ./gradlew build sonarqube --info
+#        --settings-file=./sonar-project.properties
